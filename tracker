@@ -1,0 +1,10 @@
+**11/23/26**
+
+Fixes
+- "Unexpected character" errors -> supplied file name instead of the actual string to read from
+- Crashing during runtime -> supplied a pointer to a Token object instead of direct construction
+- std:: member printing -> absence of to_string made program assume int + const char* (pointer arithmetic)
+- unneeded ~Token() destructor
+
+Concepts covered
+- tokens, lexemes, maximal munch, token types, lookahead, lexer
